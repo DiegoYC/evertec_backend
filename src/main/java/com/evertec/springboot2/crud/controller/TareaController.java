@@ -21,18 +21,24 @@ import com.evertec.springboot2.crud.exception.ResourceNotFoundException;
 import com.evertec.springboot2.crud.model.Tarea;
 import com.evertec.springboot2.crud.repository.TareaRepository;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @RequestMapping("/api/v1")
+@Api(tags = "Tareas", description = "Operaciones relacionadas con el CRUD tareas.")
 public class TareaController {
 	@Autowired
 	private TareaRepository tareaRepository;
 
 	@GetMapping("/tareas")
+	@ApiOperation("Obtener todas las tareas")
 	public List<Tarea> getAllTareas() {
 		return tareaRepository.findAll();
 	}
 
 	@GetMapping("/tareas/{id}")
+	@ApiOperation("Obtener una tarea por su ID")
 	public ResponseEntity<Tarea> getTareaById(@PathVariable(value = "id") Long tareaId)
 			throws ResourceNotFoundException {
 		@SuppressWarnings("null")
@@ -43,11 +49,13 @@ public class TareaController {
 
 	@SuppressWarnings("null")
 	@PostMapping("/tareas")
+	@ApiOperation("Crear una nueva tarea")
 	public Tarea createTarea(@Valid @RequestBody Tarea tarea) {
 		return tareaRepository.save(tarea);
 	}
 
 	@PutMapping("/tareas/{id}")
+	@ApiOperation("Actualizar una tarea existente")
 	public ResponseEntity<Tarea> updateTarea(@PathVariable(value = "id") Long tareaId,
 			@Valid @RequestBody Tarea tareaDetails) throws ResourceNotFoundException {
 		@SuppressWarnings("null")
@@ -64,6 +72,7 @@ public class TareaController {
 
 	@SuppressWarnings("null")
 	@DeleteMapping("/tareas/{id}")
+	@ApiOperation("Eliminar una tarea existente")
 	public Map<String, Boolean> deleteTarea(@PathVariable(value = "id") Long tareaId)
 			throws ResourceNotFoundException {
 		Tarea tarea = tareaRepository.findById(tareaId)
