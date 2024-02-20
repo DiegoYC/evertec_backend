@@ -42,9 +42,9 @@ Accede a la aplicación desde tu navegador web en http://localhost:8080.
 En el repositorio tambien se incluye el dockerfile.
 
 ## Tecnologías Utilizadas
-Spring Boot
-Spring Data JPA
-Spring Security
-PostgreSQL
-Maven
-Swagger (https://stingray-app-ik4ek.ondigitalocean.app/swagger-ui.html)
+* Spring Boot
+* Spring Data JPA
+* Spring Security
+* PostgreSQL
+* Maven
+* Swagger (https://stingray-app-ik4ek.ondigitalocean.app/swagger-ui.html)
