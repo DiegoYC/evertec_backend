@@ -31,7 +31,7 @@ public class TareaControllerIntegrationTest {
 	private int port;
 
 	private String getRootUrl() {
-		return "http://localhost:" + port;
+		return "http://localhost:" + port + "/api/v1";
 	}
 
 	@Test
