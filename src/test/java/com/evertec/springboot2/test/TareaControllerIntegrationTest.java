@@ -21,8 +21,8 @@ import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.Base64;
 
+import com.evertec.springboot2.crud.Application;
 import com.evertec.springboot2.crud.model.Tarea;
-import com.evertec.springboot2.crud.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
