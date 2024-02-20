@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.evertec.springboot2</groupId>
-	<artifactId>springboot2-postgresql-jpa-hibernate-crud-example</artifactId>
+	<artifactId>springboot2-postgresql-crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>prueba-evertec</name>
-	<description>springboot2-postgresql-jpa-hibernate-crud-example</description>
+	<name>Evertec CRUD</name>
+	<description>Spring Boot-Application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

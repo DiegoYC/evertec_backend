@@ -2,11 +2,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-Application<springboot2-postgresql-jpa-hibernate-crud-example>",
+            "name": "Spring Boot-Application",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "mainClass": "com.evertec.springboot2.crud.Application",
-            "projectName": "springboot2-postgresql-jpa-hibernate-crud-example",
+            "projectName": "Evertec CRUD",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

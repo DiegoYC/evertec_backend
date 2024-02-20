@@ -1,4 +1,4 @@
-package com.evertec.springboot2.crudTest;
+package com.evertec.springboot2.crud;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -19,7 +19,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.HttpClientErrorException;
 
-import com.evertec.springboot2.crud.Application;
 import com.evertec.springboot2.crud.model.Tarea;
 
 @RunWith(SpringRunner.class)

@@ -1,4 +1,4 @@
-package com.evertec.springboot2.crudTest;
+package com.evertec.springboot2.crud;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
