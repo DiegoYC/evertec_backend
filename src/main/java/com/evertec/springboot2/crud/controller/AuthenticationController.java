@@ -38,7 +38,7 @@ public class AuthenticationController {
     @Autowired
     private UsuarioJWT usuarioJWTService;
 
-    @ApiOperation(value = "Autenticar usuario y generar token JWT")
+    @ApiOperation(tags = "Autenticación",value = "Autenticar usuario y generar token JWT")
     @PostMapping("/auth")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
         try {
