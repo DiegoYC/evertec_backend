@@ -46,7 +46,7 @@ public class AuthenticationController {
                 new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword())
         );
 
-        logger.info("Usuario en validado: " + authentication.getName());
+        logger.info("Usuario validado: " + authentication.getName());
 
         final UserDetails userDetails = usuarioJWTService
                 .loadUserByUsername(authenticationRequest.getUsername());
