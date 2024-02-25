@@ -26,7 +26,6 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins = "https://evertec-frontend.vercel.app")
 @Api(tags = "Tareas", description = "Operaciones relacionadas con el CRUD tareas.")
 public class TareaController {
 	@Autowired
