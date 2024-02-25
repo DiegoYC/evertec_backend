@@ -11,9 +11,21 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("https://evertec-frontend.vercel.app", "http://localhost:3000") // Permitir solicitudes desde estas web
+                .allowedOrigins("https://evertec-frontend.vercel.app", "http://localhost:3000")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
-                .allowCredentials(true); // Permitir cookies
+                .allowCredentials(true);
+        
+        registry.addMapping("/auth")
+                .allowedOrigins("https://evertec-frontend.vercel.app", "http://localhost:3000")
+                .allowedMethods("POST")
+                .allowedHeaders("*")
+                .allowCredentials(true);
+        
+        registry.addMapping("/validateAuth")
+                .allowedOrigins("https://evertec-frontend.vercel.app", "http://localhost:3000")
+                .allowedMethods("POST")
+                .allowedHeaders("*")
+                .allowCredentials(true);
     }
 }
