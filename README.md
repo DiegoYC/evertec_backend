@@ -12,6 +12,7 @@ Documentación de API con Swagger.
 ## Prerequisitos
 Contar con una BD PostgreSQL y ejecutar el siguiente script:
 
+Crear la tabla tarea:
 ```
 CREATE TABLE tarea (
 identificador SERIAL PRIMARY KEY,
@@ -21,7 +22,17 @@ fecha_modificacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 vigente BOOLEAN
 );
 ```
-
+Crear la tabla usuario:
+```
+CREATE TABLE public.usuario (
+	id serial4 NOT NULL,
+	username varchar(50) NOT NULL,
+	"password" varchar(255) NOT NULL,
+	roles varchar(255) NULL,
+	CONSTRAINT usuario_pkey PRIMARY KEY (id),
+	CONSTRAINT usuario_username_key UNIQUE (username)
+);
+```
 
 ## Instalación y Uso
 Para ejecutar la aplicación localmente, sigue estos pasos:
@@ -47,4 +58,4 @@ En el repositorio tambien se incluye el dockerfile.
 * Spring Security
 * PostgreSQL
 * Maven
-* Swagger (https://stingray-app-ik4ek.ondigitalocean.app/swagger-ui.html)
+* Swagger ([https://stingray-app-ik4ek.ondigitalocean.app/swagger-ui.html](https://monkfish-app-zuf2e.ondigitalocean.app/swagger-ui.html)https://monkfish-app-zuf2e.ondigitalocean.app/swagger-ui.html)
