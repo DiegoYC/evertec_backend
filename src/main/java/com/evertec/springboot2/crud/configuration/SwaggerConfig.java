@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 "API para administrar tareas en una aplicación Spring Boot",
                 "1.0",
                 "Terms of service",
-                new Contact("Diego YC", "-", "diego.yucra@evertecinc.com"),
+                new Contact("Diego YC", "-", "***@****.com"),
                 "License of API", "API license URL", java.util.Collections.emptyList());
     }
 }
